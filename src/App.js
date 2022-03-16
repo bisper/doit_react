@@ -16,6 +16,7 @@ import TodaysPlan from "./03/TodaysPlan";
 // 프로퍼티 사용해 보기
 import PropsComponent from "./03/PropsComponent";
 import ChildComponent from "./03/ChildComponent";
+import BooleanComponent from "./03/BooleanComponent";
 
 class App extends React.Component {
   render() {
@@ -39,6 +40,13 @@ class App extends React.Component {
               console.log("메시지");
             }}
           />
+          <br /><hr /><br/>
+          <div>
+            {/* 하위 컴포넌트에 프로퍼티로 Boolean 데이터 전송 시 변수 명만 사용하여 true 값 전달 */}
+            <b>지루할 때 : </b><BooleanComponent bored />
+          </div>
+          {/* 하위 컴포넌트에 프로퍼티로 Boolean 데이터 전송 시 변수명을 미사용하여 false 값 전달 */}
+          <div><b>즐거울 때 : </b><BooleanComponent /></div>
         </div>
       </div>
     );
