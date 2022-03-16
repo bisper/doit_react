@@ -17,7 +17,11 @@ class PropsComponent extends React.Component {
   }
 }
 
+/**
+ * 컴포넌트에서 사용할 데이터의 데이터 타입을 React의 prop-type 모듈을 사용하여 데이터 타입을 선언
+ */
 PropsComponent.propTypes = {
+  /** 변수 name 의 데이터 타입을 PropTypes를 통해서 string 형으로 지정 */
   name: PropTypes.string
 };
 
