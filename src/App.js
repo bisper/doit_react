@@ -18,6 +18,7 @@ import PropsComponent from "./03/PropsComponent";
 import ChildComponent from "./03/ChildComponent";
 import ChildComponent2 from "./03/ChildComponent2";
 import BooleanComponent from "./03/BooleanComponent";
+import DefaultPropsComponent from "./03/DefaultPropsComponent";
 
 class App extends React.Component {
   render() {
@@ -56,6 +57,10 @@ class App extends React.Component {
           // 필수 프로퍼티의 내용을 입력
           requiredStringValue="문자"
           />
+          <br/><hr/><br/>
+          <DefaultPropsComponent />
+          <br/><hr/><br/>
+          {/* 프로젝트 내용 */}
         </div>
       </div>
     );
