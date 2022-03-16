@@ -13,6 +13,8 @@
 
 import React from "react";
 import TodaysPlan from "./03/TodaysPlan";
+// 프로퍼티 사용해 보기
+import PropsComponent from "./03/PropsComponent";
 
 class App extends React.Component {
   render() {
@@ -22,6 +24,7 @@ class App extends React.Component {
         <div>안녕하세요</div>
         <div className="body">
           <TodaysPlan />
+          <PropsComponent name="두잇 리액트" />
         </div>
       </div>
     );
