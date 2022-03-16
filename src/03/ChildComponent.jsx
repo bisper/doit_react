@@ -3,20 +3,14 @@ import PropTypes from 'prop-types';
 
 class ChildComponent extends React.Component {
   render() {
-    // const {
-    //   boolValue,
-    //   numValue,
-    //   arrayValue,
-    //   objValue,
-    //   nodeValue,
-    //   funcValue,
-    // } = this.props;
-    const boolValue = this.props.boolValue;
-    const numValue = this.props.numValue;
-    const arrayValue = this.props.arrayValue;
-    const objValue = this.props.objValue;
-    const nodeValue = this.props.nodeValue;
-    const funcValue = this.props.funcValue;
+    const {
+      boolValue,
+      numValue,
+      arrayValue,
+      objValue,
+      nodeValue,
+      funcValue,
+    } = this.props;
 
     return (
       <div>
