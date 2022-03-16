@@ -16,6 +16,7 @@ import TodaysPlan from "./03/TodaysPlan";
 // 프로퍼티 사용해 보기
 import PropsComponent from "./03/PropsComponent";
 import ChildComponent from "./03/ChildComponent";
+import ChildComponent2 from "./03/ChildComponent2";
 import BooleanComponent from "./03/BooleanComponent";
 
 class App extends React.Component {
@@ -47,6 +48,14 @@ class App extends React.Component {
           </div>
           {/* 하위 컴포넌트에 프로퍼티로 Boolean 데이터 전송 시 변수명을 미사용하여 false 값 전달 */}
           <div><b>즐거울 때 : </b><BooleanComponent /></div>
+
+          <br/><hr/><br/>
+          
+          <ChildComponent2
+          objValue={{ age: 20 }}
+          // 필수 프로퍼티의 내용을 입력
+          requiredStringValue="문자"
+          />
         </div>
       </div>
     );
