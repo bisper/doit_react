@@ -19,10 +19,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
+import App03_04 from './App03_04';
 
 ReactDOM.render(
-  // <React.StrictMode>
-    <App />
-  // </React.StrictMode>,
-  , document.getElementById('root')
+  <React.StrictMode>
+    {/* 03-3 장까지 내용, 프로퍼티 */}
+    {/* <App /> */}
+
+    {/* 03-4장 까지 내용, 상태관리 */}
+    <App03_04 />
+  </React.StrictMode>,
+  document.getElementById('root')
 );
