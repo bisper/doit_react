@@ -22,11 +22,17 @@ class DefaultPropsComponent extends React.Component {
   }
 }
 
+/**
+ * 프로퍼티의 데이터 타입 설정
+ */
 DefaultPropsComponent.propTypes = {
   boolValue: PropTypes.bool,
   boolValueWithoutDefault: PropTypes.bool
 };
 
+/**
+ * 기본 프로퍼티 설정
+ */
 DefaultPropsComponent.defaultProps = {
   boolValue : false
 };
