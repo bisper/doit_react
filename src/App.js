@@ -19,6 +19,7 @@ import ChildComponent from "./03/ChildComponent";
 import ChildComponent2 from "./03/ChildComponent2";
 import BooleanComponent from "./03/BooleanComponent";
 import DefaultPropsComponent from "./03/DefaultPropsComponent";
+import ChildProperty from "./03/ChildProperty";
 
 class App extends React.Component {
   render() {
@@ -61,6 +62,12 @@ class App extends React.Component {
           <DefaultPropsComponent />
           <br/><hr/><br/>
           {/* 프로젝트 내용 */}
+          <br/><hr/><br/>
+          {/* 하위 컴포넌트에 자손 태그를 입력하면 하위 컴포넌트에서 children 프로퍼티를 통해서 자손 태그를 받아올 수 있음 */}
+          <ChildProperty>
+            {/* 하위 컴포넌트에 전송될 자손 태그 */}
+            <div><span>자식 노드</span></div>
+          </ChildProperty>
         </div>
       </div>
     );
